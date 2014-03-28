@@ -233,13 +233,13 @@ $matryo-bp-xl-name    : 'xl' !default; /* [3] */
 @mixin _col-classes($namespace, $j, $i) {
 
     @if $i != $j {
-        .#{$namespace}col-#{$j}-#{$i}'] {
+        .#{$namespace}c-#{$j}-#{$i} {
             width: percentage($j / $i);
         }
     }
 
     @if $i == 1 and $namespace  {
-        .#{$namespace}col-#{$j} {
+        .#{$namespace}c-#{$j} {
             width: 100%;
         }
     }
